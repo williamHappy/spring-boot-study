@@ -1,0 +1,15 @@
+#SPRING
+spring:
+  output:
+    ansi:
+      enabled: always
+  datasource:
+    url: jdbc:mysql://192.168.1.150:3306/xn_test
+    username: root
+    password: xueneng5404
+    driver-class-name: com.mysql.jdbc.Driver
+
+#MYBATIS
+mybatis:
+  mapper-locations: classpath*:mybatis/*Mapper.xml
+  type-aliases-package: cn.will.entity
