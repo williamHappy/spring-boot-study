@@ -1,0 +1,17 @@
+#USER_DEFINED_WILL
+me:
+  name: will
+  age: 23
+  number: ${random.int}
+  uuid: ${random.uuid}
+  max: ${random.int(10)}
+  value: ${random.value}
+  greeting: hello, i'm ${me.name}
+
+#SPRING
+spring:
+  output:
+    ansi:
+      enabled: always
+  profiles:
+    active: dev

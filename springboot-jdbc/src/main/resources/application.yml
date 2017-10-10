@@ -1,0 +1,10 @@
+#SPRING
+spring:
+  output:
+    ansi:
+      enabled: always
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.1.150:3306/xn_yulinhospital
+    username: root
+    password: xueneng5404
