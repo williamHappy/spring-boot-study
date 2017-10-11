@@ -1,0 +1,8 @@
+#SPRING
+spring:
+  output:
+    ansi:
+      enabled: always
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/springboot-db
