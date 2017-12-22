@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>cn.will</groupId>
-    <artifactId>springboot-mongodb</artifactId>
+    <artifactId>springboot-async-method</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <!-- Inherit defaults from Spring Boot -->
@@ -24,10 +24,16 @@
     <dependencies>
 
         <!-- start: Spring Boot application starters -->
-        <!-- Support for the MongoDB NoSQL Database, including spring-data-mongodb -->
+        <!-- The core Spring Boot starter, including auto-configuration support, logging and YAML. -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-mongodb</artifactId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
+        <!-- Support for full-stack web development, including Tomcat and spring-webmvc. -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
         <!-- Support for common test dependencies, including JUnit, Hamcrest and Mockito along with the spring-test module. -->
@@ -44,6 +50,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
             <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
         </dependency>
 
     </dependencies>

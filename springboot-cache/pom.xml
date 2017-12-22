@@ -5,8 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>cn.will</groupId>
-    <artifactId>springboot-mongodb</artifactId>
+    <artifactId>springboot-cache</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
     <!-- Inherit defaults from Spring Boot -->
     <parent>
@@ -24,10 +25,10 @@
     <dependencies>
 
         <!-- start: Spring Boot application starters -->
-        <!-- Support for the MongoDB NoSQL Database, including spring-data-mongodb -->
+        <!-- Support for full-stack web development, including Tomcat and spring-webmvc. -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-mongodb</artifactId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
         <!-- Support for common test dependencies, including JUnit, Hamcrest and Mockito along with the spring-test module. -->
@@ -35,6 +36,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <!-- Support for Spring’s Cache abstraction. -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-cache</artifactId>
         </dependency>
 
         <!-- end:Spring Boot application starters -->
@@ -47,15 +54,5 @@
         </dependency>
 
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
-
 
 </project>

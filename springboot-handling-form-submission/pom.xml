@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>cn.will</groupId>
-    <artifactId>springboot-mongodb</artifactId>
+    <artifactId>springboot-handling-form-submission</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <!-- Inherit defaults from Spring Boot -->
@@ -24,10 +24,10 @@
     <dependencies>
 
         <!-- start: Spring Boot application starters -->
-        <!-- Support for the MongoDB NoSQL Database, including spring-data-mongodb -->
+        <!-- Support for full-stack web development, including Tomcat and spring-webmvc. -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-mongodb</artifactId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
         <!-- Support for common test dependencies, including JUnit, Hamcrest and Mockito along with the spring-test module. -->
@@ -35,6 +35,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <!-- Support for the Thymeleaf templating engine, including integration with Spring.支持Thymeleaf模板引擎，包括与Spring集成。 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
 
         <!-- end:Spring Boot application starters -->
@@ -56,6 +62,5 @@
             </plugin>
         </plugins>
     </build>
-
 
 </project>

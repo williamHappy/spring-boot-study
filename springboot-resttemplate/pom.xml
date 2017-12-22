@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>cn.will</groupId>
-    <artifactId>springboot-mongodb</artifactId>
+    <artifactId>springboot-resttemplate</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <!-- Inherit defaults from Spring Boot -->
@@ -24,10 +24,10 @@
     <dependencies>
 
         <!-- start: Spring Boot application starters -->
-        <!-- Support for the MongoDB NoSQL Database, including spring-data-mongodb -->
+        <!-- The core Spring Boot starter, including auto-configuration support, logging and YAML. -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-mongodb</artifactId>
+            <artifactId>spring-boot-starter</artifactId>
         </dependency>
 
         <!-- Support for common test dependencies, including JUnit, Hamcrest and Mockito along with the spring-test module. -->
@@ -46,6 +46,13 @@
             <optional>true</optional>
         </dependency>
 
+        <!--  support for spring-web service -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+        </dependency>
+
+
     </dependencies>
 
     <build>
@@ -56,6 +63,5 @@
             </plugin>
         </plugins>
     </build>
-
 
 </project>

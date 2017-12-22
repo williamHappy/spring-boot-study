@@ -1,0 +1,10 @@
+#SPRING
+spring:
+  output:
+    ansi:
+      enabled: always
+  http:
+    multipart:
+      max-file-size: 128KB
+      max-request-size: 128KB
+

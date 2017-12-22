@@ -5,8 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>cn.will</groupId>
-    <artifactId>springboot-mongodb</artifactId>
+    <artifactId>springboot-redis-message</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>springboot-redis-message</name>
 
     <!-- Inherit defaults from Spring Boot -->
     <parent>
@@ -24,10 +27,10 @@
     <dependencies>
 
         <!-- start: Spring Boot application starters -->
-        <!-- Support for the MongoDB NoSQL Database, including spring-data-mongodb -->
+        <!--Support redis include jedis-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-mongodb</artifactId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
 
         <!-- Support for common test dependencies, including JUnit, Hamcrest and Mockito along with the spring-test module. -->
